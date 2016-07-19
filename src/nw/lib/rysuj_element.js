@@ -25,6 +25,7 @@ function zrób_zdjęcie ( szczegóły ) {
 	el.download = "test.png";
 	el.target = "_blank";
 	((okno.document.getElementsByClassName ( "entry iC" ))[0].appendChild ( el ) ).click();
+	//Przenieść do funkcji, a elementu usuwać po kliknięciu.
 }
 
 exports.zrób_zdjęcie	= zrób_zdjęcie;
