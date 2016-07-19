@@ -2,8 +2,8 @@
 
 ## Zadania organizacyjne
 - [X] Zrobić listę
-- [ ] Dodac pliki dodatku do repozytorium
-- [ ] Skonczyć pierwszą wersje alfa
+- [X] Dodac pliki dodatku do repozytorium
+- [X] Skonczyć pierwszą wersje alfa
 - [ ] Wykonać sprawy organizacyjne związane z podpisywaniem dodatków przez Mozillę
 - [ ] Napisać instrukcję użytkownika i opis dodatku
 
