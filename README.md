@@ -9,6 +9,7 @@ Dodatek obecnie jest w wersji **alfa**, to oznacza, że:
 - zawiera błędy, których jeszcze nie naprawiłem
 - zawiera błędy, o których brak znajomości
 - zawiera cześć docelowej funkcjonalności
+- kod zawiera fragmenty tymczasowe, wymagające usunięcia oraz refaktoryzacji
 
 Licencja: GNU GPLv3
 
