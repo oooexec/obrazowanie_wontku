@@ -49,19 +49,21 @@ function obsługa_naciśnięcia ( event ) {
 }
 
 function szczegóły_zdjęcia ( element ) {
+	for ( var e in element )
+		console.log ( e, "\t", element[e] );
 	var	rodzaj		= element.getAttribute ( "rodzaj" );
 	var szukany;
 	if 		( rodzaj === "wpis" )	szukany = "wblock lcontrast dC";
 	else if	( rodzaj === "wątek" )	szukany = "entry iC";
-	//console.log ( szukany );
+	console.log ( szukany );
 	//var szukany		= (rodzaj === "wpis") ? "wblock lcontrast dC" : "entry iC";
 	//while ( ( element = element.parentElement ) && !element.classList.contains ( szukany ) );
 	while ( element !== null ) {
 		//let tmp	= element.getElementsByClassName ( szukany );
 		let tmp		= element.getAttribute ( "class" );
-		//console.log ( tmp, "\t\t", szukany );
+		console.log ( tmp, "\t\t", szukany );
 		if ( tmp !== null && tmp.indexOf ( szukany ) > -1 ) {
-			//console.log ( "znaleziono ", element.innerHTML );
+			console.log ( "znaleziono ", element.innerHTML );
 			break;
 		}
 		element = element.parentElement;
@@ -107,12 +109,15 @@ function utwórz_przycisk ( opis, rodzaj ) {
 								"href"		:	"javascript:void(0);",
 								"rodzaj"	:	rodzaj } );
 	let przycisk			= nowy_element ( "li", {
-								"class"		:	self.options.clsuuid } );
+								"class"		:	self.options.clsuuid,
+								"rodzaj"	:	rodzaj } );
 	let tmp_styl			= nowy_element ( "style", {
-								"type"		:	"text/css" },
+								"type"		:	"text/css",
+								"rodzaj"	:	rodzaj },
 								".fa-aparat:before { content : \"\\f030\"; margin-right: 4px; }" );
 	let tmp					= nowy_element ( "i", {
-								"class"		:	"fa fa-aparat" } );
+								"class"		:	"fa fa-aparat",
+								"rodzaj"	:	rodzaj } );
 	
 	link.appendChild		( tmp_styl );
 	link.appendChild		( tmp );
