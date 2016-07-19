@@ -5,6 +5,7 @@
 - [ ] Dodac pliki dodatku do repozytorium
 - [ ] Skonczyć pierwszą wersje alfa
 - [ ] Wykonać sprawy organizacyjne związane z podpisywaniem dodatków przez Mozillę
+- [ ] Napisać instrukcję użytkownika i opis dodatku
 
 ## Planowane funkcjonalności dodatku
 - [ ] Automatyczne rozwijanie i zwijanie wątków
