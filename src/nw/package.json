@@ -1,0 +1,20 @@
+{
+	"name"			:	"nw",
+	"version"		:	"0.0.1",
+	"description"	:	"Wygodne narzędzia dla wykop.pl.",
+	"main"			:	"index.js",
+	"scripts"		:	{
+							"test"	: "echo \"Error: no test specified\" && exit 1"
+						},
+	"author"		:	"Kefir",
+	"license"		:	"GNU GPL v3",
+	"permissions"	:	{ "private-browsing"	:	true },
+	"preferences"	:	[ {
+							"description"	:	"zaznaczony\n  dodatek włączony\n\npusty\n  dodatek wyłączony",
+							"type"			:	"bool",
+							"name"			:	"ustawienie_onoff",
+							"value"			:	true,
+							"title"			:	"Włącz lub wyłącz dodatek."
+						} ]
+
+}
