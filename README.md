@@ -15,4 +15,6 @@ Licencja: GNU GPLv3
 
 Dziękuję za informacje o błędach i uwagi.
 
+Prezentacja działania dodatku
+
 ![Prezentacja Dodatku](http://im.ezgif.com/tmp/ezgif-2768823631.gif)
