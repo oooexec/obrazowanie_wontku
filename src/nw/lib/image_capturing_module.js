@@ -10,10 +10,6 @@ function wykonaj_zrzut_ekranu ( obszar_zrzutu_ekranu ) {
 	var renderer_strony							=	miejsce_na_zrzut_ekranu.getContext ( "2d" );
 	
 	przygotowanie_strony_do_zrzutu_ekranu		(	"ukryj_paski", strona_w_bierzącej_karcie );
-	console.log (	typeof strona_w_bierzącej_karcie, "\n",
-					typeof obszar_zrzutu_ekranu, "\n",
-					obszar_zrzutu_ekranu.współrzędne.x, "\n",
-					miejsce_na_zrzut_ekranu.width, "\n" );
 	renderer_strony.drawWindow					(	strona_w_bierzącej_karcie,
 													obszar_zrzutu_ekranu.współrzędne.x,
 													obszar_zrzutu_ekranu.współrzędne.y,

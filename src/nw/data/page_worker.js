@@ -2,9 +2,21 @@
 self.port.on ( "usuń_przyciski", usuń_wszystkie_dodane_przyciski );
 dodaj_przyciski_na_stronę();
 
+console.log ( " ustawiam obserwatora " );
+var ustawienia_obserwatora = { attributes : false, subtree : true, childList : true, characterData : false };
+
+var obserwator	=	new MutationObserver ( function ( zmiany ) {
+		dodaj_przyciski_na_stronę();
+		console.log ( "Uaktualniono przyciski we wpisach. Teraz każdy wpis posiada przycisk." );
+	} );
+var element		=	document.getElementById ( "site" );
+obserwator.observe ( element, ustawienia_obserwatora );
+
 //////////////////////////////
 //POCZĄTEK FUNKCJI USUWAJĄCYCH
 function usuń_wszystkie_dodane_przyciski () {
+	console.log ( " usuwam obserwatora " );
+	obserwator.disconnect();
 	 //zmienić nazwę clsuuid i to co wysyła self.port.emit
 	 var lista_przycisków	=	document.getElementsByClassName ( self.options.clsuuid );
 	 while ( lista_przycisków.length > 0 ) {
@@ -23,6 +35,9 @@ function dodaj_przyciski_na_stronę () {
 	let wpisy_na_stronie	=	document.getElementsByClassName ( "wblock lcontrast dC" );
 	
 	for ( var p = 0, k = wpisy_na_stronie.length; p < k; ++p ) {
+		//Jeżeli wpis zawiera przyciski, to pomiń dodawanie
+		if ( (wpisy_na_stronie[p].getElementsByClassName ( self.options.clsuuid )).length > 0 )
+			continue;
 		let element_do_którego_dodać_przycisk	=	wpisy_na_stronie[p].getElementsByClassName ( "responsive-menu" );
 		if ( element_do_którego_dodać_przycisk[0] === undefined )
 			continue;

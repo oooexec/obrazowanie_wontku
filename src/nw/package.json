@@ -1,6 +1,6 @@
 {
 	"name"			:	"nw",
-	"version"		:	"0.0.3",
+	"version"		:	"0.0.4",
 	"description"	:	"Wygodne narzędzia dla wykop.pl.",
 	"main"			:	"index.js",
 	"scripts"		:	{

@@ -17,3 +17,10 @@
 	wa funkcjonalność dostępna będzie od wersji 0.0.4. Przede wszystkim 
 	obsługa ładowania zwiniętych wpisów w wątku i ochrona przed wielo-
 	krotnym dodawaniem "przycisków" do tego samego wpisu.
+
+###0.0.4
+
+	Dodatek reaguje na dynamiczne zmiany w kodzie strony (np. kiedy 
+	użytkownik wczytuje ukryte wpisy w wątku ) i dodaje przy-
+	ciski do nowo dodanych wpisów oraz wykrywa czy dany wpis posiada 
+	już wpis i pomija dodawanie dla niego.
