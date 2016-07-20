@@ -1,12 +1,12 @@
 {
 	"name"			:	"nw",
-	"version"		:	"0.0.2",
+	"version"		:	"0.0.3",
 	"description"	:	"Wygodne narzędzia dla wykop.pl.",
 	"main"			:	"index.js",
 	"scripts"		:	{
 							"test"	: "echo \"Error: no test specified\" && exit 1"
 						},
-	"author"		:	"Kefir",
+	"author"		:	"oooexec",
 	"license"		:	"GNU GPL v3",
 	"permissions"	:	{ "private-browsing"	:	true },
 	"preferences"	:	[ {
@@ -16,5 +16,4 @@
 							"value"			:	true,
 							"title"			:	"Włącz lub wyłącz dodatek."
 						} ]
-
 }
