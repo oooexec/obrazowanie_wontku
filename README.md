@@ -14,3 +14,5 @@ Dodatek obecnie jest w wersji **alfa**, to oznacza, że:
 Licencja: GNU GPLv3
 
 Dziękuję za informacje o błędach i uwagi.
+
+![Prezentacja Dodatku](http://im.ezgif.com/tmp/ezgif-2768823631.gif)
